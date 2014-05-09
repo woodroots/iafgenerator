@@ -13,3 +13,5 @@ WindowsLiveメールなどで使われる.iafファイルを一括で生成し�
 
 上記のように入力すると、yamada@example.com、tanaka@example.com、kimura@example.comそれぞれのiafファイルをまとめたzipファイルがダウンロードできます。
 
+[動作デモはこちら](http://wood-roots.com/sample/iaf/)
+[解説記事はこちら](http://wood-roots.com/?p=1109)
