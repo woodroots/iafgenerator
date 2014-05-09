@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* リセット */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td { 
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "メイリオ",Meiryo,verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+	background: #ffffff;
+	font-size: 12px;
+	line-height: 1.7;
+	text-align: left;
+}
+
+* html body {
+	font-family: MS UI Gothic,"ＭＳ Ｐゴシック","MS PGothic",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,Sans-Serif;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,th {
+	vertical-align: top;
+	text-align: left;
+}
+
+ol,ul,dl,dd,li {
+	list-style: none;
+}
+
+ol,ul,dl {
+	display: block;
+}
+
+dt,dd,li {
+	display: inline;
+}
+
+h1,h2,h3,h4,h5,h6,address,th {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+a img {
+	border: none;
+}
+
+img {
+	vertical-align: bottom;
+}

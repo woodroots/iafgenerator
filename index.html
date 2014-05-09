@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>.iafジェネレータ</title>
+
+<!--[if lt IE 9]>
+<script src="common/js/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lte IE 6 ]>
+<script src="common/js/DD_belatedPNG.js" charset="utf-8"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="common/css/base.css" media="screen,tv,print" />
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="common/js/script.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<h1>.aifジェネレータ</h1>
+		<p>大量のメールアカウントの.aifファイルを一気に生成できます。<br />
+		<a href="http://www.phpkode.com/scripts/item/iaf-decoder-coder/" target="_blank">IAF decoder coder</a>を使用させていただきました。
+		</p>
+	</header>
+	<section>
+		<form action="generate.php" method="post">
+		<article>
+			<h1>Step 1.ドメインを入力してください。wwwはなしで。（例：example.com）</h1>
+			<p>POPサーバは「pop3.ドメイン」、SMTPサーバは「smtp.ドメイン」となります。<br />
+			その他仕様：<br />
+			・SMTP認証有り　・アカウント・パスワードは受信サーバと同じ<br />
+			・SMTPポートは587　・POPポートは110
+			・generate.php内を書き換えることで設定を変更できます。
+			</p>
+			<input type="text" name="domain" placeholder="example.com" />
+		</article>
+		
+		<article>
+			<h1>Step 2.1アカウントごとに改行しながら「@の前,アカウント名,パスワード」を入力してください。</h1>
+			<textarea name="account" cols="30" rows="10" placeholder="yamada,abcd123,password"></textarea>
+		</article>
+		
+		<article>
+			<div class="tacenter">
+				<button>生成する！</button>
+			</div>
+		</article>
+		</form>
+
+		<article>
+			<div id="result"></div>
+		</article>
+	</section>
+	
+	<section>
+		<article>
+			<h1>設定内容を確認したい場合</h1>
+			<p>正常に動作しているアカウントからエクスポートした.iafファイルを選択して「確認する」をクリックしてください。</p>
+		</article>
+		<article>
+			<form action="check.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="checkfile" />
+				<button>確認する</button>
+			</form>
+			
+		</article>
+	</section>
+</body>
+</html>

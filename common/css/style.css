@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* リンク設定 */
+a:link,a:visited {
+	text-decoration: none;
+	color: #0000FF;
+}
+
+a:hover,a:active {
+	text-decoration: underline;
+	color: #FF0000;
+}
+
+/* デフォルトハック */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* デフォルトイメージ */
+img.frame {
+	padding: 5px;
+	border: 1px solid #666666;
+	background: #FFFFFF;
+	margin: 5px;
+}
+
+img.right {
+	margin: 0 0 5px 5px;
+}
+
+img.left {
+	margin: 0 5px 5px 0;
+}
+
+/* 共通 */
+body {
+	color: #000000;
+	padding: 20px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+body >header {
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 20px;
+}
+body >header h1 {
+	font-size: 170%;
+	font-weight: bold;
+}
+section:last-child {
+	border-top: 2px solid #ddd;
+	padding-top: 20px;
+}
+section article {
+	margin-top: 40px;
+}
+section article h1 {
+	font-weight: bold;
+}
+input[type="text"],textarea {
+	padding: 5px;
+	margin-top: 5px;
+	border: 1px solid #bbb;
+	font-size: 120%;
+	width: 600px;
+}
+
+button {
+	padding: 5px 40px;
+	color: #fff;
+	background: #588EBC;
+	border: none;
+}
